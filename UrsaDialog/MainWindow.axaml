@@ -16,6 +16,12 @@
             <TabItem Header="Dialog">
                 <views:DefaultDialog />
             </TabItem>
+            <TabItem Header="Custom Dialog">
+                <views:CustomDialog/>
+            </TabItem>
+            <TabItem Header="Overlay Dialog">
+                <views:OverlayDialogDemo />
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

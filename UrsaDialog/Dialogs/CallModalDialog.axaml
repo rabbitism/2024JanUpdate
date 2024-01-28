@@ -1,0 +1,16 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:UrsaDialog.Dialogs"
+             x:DataType="local:CallModalDialogViewModel"
+             x:CompileBindings="True"
+             mc:Ignorable="d" d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="UrsaDialog.Dialogs.CallModalDialog">
+    <StackPanel HorizontalAlignment="Left" Spacing="20" Margin="20">
+        <TextBlock Text="This dialog will call another overlay modal dialog. "></TextBlock>
+        <Button Content="Show Modal Dialog" Classes="Danger" Command="{Binding  ShowDialogCommand}"></Button>
+        <Button Content="Show Modal Dialog" Classes="Success" Command="{Binding  ConfirmCommand}"></Button>
+    </StackPanel>
+</UserControl>

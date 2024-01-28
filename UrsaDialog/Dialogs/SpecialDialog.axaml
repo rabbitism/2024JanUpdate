@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:UrsaDialog.Dialogs"
+             x:DataType="local:SpecialDialogViewModel"
+             x:CompileBindings="True"
+             mc:Ignorable="d" d:DesignWidth="600"
+             d:DesignHeight="400"
+             x:Class="UrsaDialog.Dialogs.SpecialDialog">
+    <Panel ClipToBounds="False">
+        <Image Source="avares://UrsaDialog/Assets/R.jpg" Height="400" ></Image>
+        <Rectangle Opacity="0.9" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="{DynamicResource SemiBlue9}"></Rectangle>
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+            <TextBlock Foreground="White" HorizontalAlignment="Center" Margin="0 0 0 30" Theme="{DynamicResource TitleTextBlock}" Classes="H3">Congratulations!</TextBlock>
+            <TextBlock Foreground="White" Margin="10" Text="You have passed the exam!" HorizontalAlignment="Center"/>
+            
+        </StackPanel>
+    </Panel>
+</UserControl>

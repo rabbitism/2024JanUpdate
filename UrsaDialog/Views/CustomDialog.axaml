@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:UrsaDialog.ViewModels"
+             xmlns:u="https://irihi.tech/ursa"
+             xmlns:common="clr-namespace:Ursa.Common;assembly=Ursa"
+             x:DataType="vm:CustomDialogViewModel"
+             x:CompileBindings="True"
+             mc:Ignorable="d" d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="UrsaDialog.Views.CustomDialog">
+    <TabControl Margin="20">
+        <TabItem Header="Custom Dialog">
+            <Button Margin="20" Content="Show Dialog" Command="{Binding DefaultCommand}" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+        </TabItem>
+    </TabControl>
+</UserControl>

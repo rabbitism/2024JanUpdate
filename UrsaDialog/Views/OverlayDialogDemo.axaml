@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:u="https://irihi.tech/ursa"
+             xmlns:vm="clr-namespace:UrsaDialog.ViewModels;assembly=UrsaDialog"
+             x:DataType="vm:OverlayDialogDemoViewModel"
+             x:CompileBindings="True"
+             mc:Ignorable="d" d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="UrsaDialog.Views.OverlayDialogDemo">
+    <Grid ColumnDefinitions="Auto, *">
+        <StackPanel Spacing="20">
+            <Button Content="Show Default Modal" Command="{Binding ShowDefaultModalCommand}"></Button>
+            <Button Content="Show Custom Modal" Command="{Binding ShowCustomModalCommand}"></Button>
+            <Button Content="Show Default" Command="{Binding ShowDefaultCommand}"></Button>
+            <Button Content="Show Custom" Command="{Binding ShowCustomCommand}"></Button>
+            <Button Content="Show Local Modal" Command="{Binding ShowLocalModalCommand}"></Button>
+            <Button Content="Show Local" Command="{Binding ShowLocalCommand}"></Button>
+            <Button Content="Overlay MessageBox" Command="{Binding ShowMessageBoxCommand}"></Button>
+        </StackPanel>
+        <u:OverlayDialogHost Grid.Column="1" HostId="Local"/>
+    </Grid>
+</UserControl>

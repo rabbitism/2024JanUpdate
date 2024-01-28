@@ -21,4 +21,10 @@
         <PackageReference Include="Irihi.Ursa.Themes.Semi" Version="0.2.0-beta20240129" />
         <PackageReference Include="Semi.Avalonia" Version="11.0.7" />
     </ItemGroup>
+
+
+    <ItemGroup>
+      <None Remove="Assets\R.jpg" />
+      <AvaloniaResource Include="Assets\R.jpg" />
+    </ItemGroup>
 </Project>
