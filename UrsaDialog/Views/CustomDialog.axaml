@@ -1,18 +1,30 @@
-<UserControl xmlns="https://github.com/avaloniaui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="using:UrsaDialog.ViewModels"
-             xmlns:u="https://irihi.tech/ursa"
-             xmlns:common="clr-namespace:Ursa.Common;assembly=Ursa"
-             x:DataType="vm:CustomDialogViewModel"
-             x:CompileBindings="True"
-             mc:Ignorable="d" d:DesignWidth="800"
-             d:DesignHeight="450"
-             x:Class="UrsaDialog.Views.CustomDialog">
+<UserControl
+    x:Class="UrsaDialog.Views.CustomDialog"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:Ursa.Common;assembly=Ursa"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:u="https://irihi.tech/ursa"
+    xmlns:vm="using:UrsaDialog.ViewModels"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    x:CompileBindings="True"
+    x:DataType="vm:CustomDialogViewModel"
+    mc:Ignorable="d">
     <TabControl Margin="20">
         <TabItem Header="Custom Dialog">
-            <Button Margin="20" Content="Show Dialog" Command="{Binding DefaultCommand}" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+            <StackPanel Spacing="20" HorizontalAlignment="Left">
+                <Button
+                    Margin="20"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Command="{Binding DefaultCommand}"
+                    Content="Show Dialog" />
+                <TextBlock Text="{Binding Result}"></TextBlock>
+            </StackPanel>
+            
+            
         </TabItem>
     </TabControl>
 </UserControl>

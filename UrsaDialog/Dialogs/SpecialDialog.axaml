@@ -14,7 +14,7 @@
         <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
             <TextBlock Foreground="White" HorizontalAlignment="Center" Margin="0 0 0 30" Theme="{DynamicResource TitleTextBlock}" Classes="H3">Congratulations!</TextBlock>
             <TextBlock Foreground="White" Margin="10" Text="You have passed the exam!" HorizontalAlignment="Center"/>
-            
+            <Button Command="{Binding ThanksCommand}" Content="Thanks!" Margin="20" Classes="Success" Theme="{DynamicResource SolidButton}"></Button>
         </StackPanel>
     </Panel>
 </UserControl>

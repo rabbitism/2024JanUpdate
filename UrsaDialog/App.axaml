@@ -8,6 +8,6 @@
     <Application.Styles>
         <FluentTheme />
         <StyleInclude Source="avares://Semi.Avalonia/Themes/Index.axaml" />
-        <u-semi:SemiTheme/>
+        <u-semi:SemiTheme Locale="en-US"/>
     </Application.Styles>
 </Application>

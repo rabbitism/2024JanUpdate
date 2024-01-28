@@ -10,7 +10,7 @@ namespace UrsaDialog.ViewModels;
 public partial class CustomDialogViewModel: ObservableObject
 {
     public ICommand DefaultCommand { get; set; }
-    [ObservableProperty] private object? _result;
+    [ObservableProperty] private bool? _result;
 
     public CustomDialogViewModel()
     {
@@ -19,6 +19,6 @@ public partial class CustomDialogViewModel: ObservableObject
 
     private async Task DefaultAsync()
     {
-        Result = await Dialog.ShowCustomModalAsync<SpecialDialog, SpecialDialogViewModel, object?>(new SpecialDialogViewModel());
+        Result = await Dialog.ShowCustomModalAsync<SpecialDialog, SpecialDialogViewModel, bool>(new SpecialDialogViewModel());
     }
 }
