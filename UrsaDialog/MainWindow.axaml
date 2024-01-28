@@ -2,8 +2,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:UrsaDialog.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UrsaDialog.MainWindow"
         Title="UrsaDialog">
-    Welcome to Avalonia!
+    <Grid RowDefinitions="Auto, Auto, *">
+        <ToggleButton Content="Toggle Theme" IsCheckedChanged="ToggleButton_OnIsCheckedChanged" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="1" Text="Ursa Update" FontSize="40" FontWeight="Bold"></TextBlock>
+        <TabControl Grid.Row="2" TabStripPlacement="Left" Margin="20">
+            <TabItem Header="Message Box">
+                <views:MessageBoxSample/>
+            </TabItem>
+            <TabItem Header="Dialog">
+                <views:DefaultDialog />
+            </TabItem>
+        </TabControl>
+    </Grid>
 </Window>

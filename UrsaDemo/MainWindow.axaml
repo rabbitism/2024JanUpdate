@@ -22,6 +22,27 @@
             <TabItem Header="Enum Selector">
                 <views:EnumSelectorDemo/>
             </TabItem>
+            <TabItem Header="Icon Button">
+                <views:IconButtonDemo />
+            </TabItem>
+            <TabItem Header="Key Gesture">
+                <views:KeyInputDemo />
+            </TabItem>
+            <TabItem Header="NumericUpDown">
+                <views:NumericUpDownDemo/>
+            </TabItem>
+            <TabItem Header="RangeSlider">
+                <views:RangeSliderDemo/>
+            </TabItem>
+            <TabItem Header="Tag Input">
+                <views:TagInputDemo />
+            </TabItem>
+            <TabItem Header="Timeline">
+                <views:TimelineDemo />
+            </TabItem>
+            <TabItem Header="TwoTone PathIcon">
+                <views:TwoTonePathIconDemo />
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

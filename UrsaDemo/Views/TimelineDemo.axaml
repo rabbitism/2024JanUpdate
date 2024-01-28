@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:u="https://irihi.tech/ursa"
+             xmlns:vm="using:UrsaDemo.ViewModels"
+             x:DataType="vm:TimelineDemoViewModel"
+             mc:Ignorable="d" d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="UrsaDemo.Views.TimelineDemo">
+    <StackPanel Spacing="20" HorizontalAlignment="Left">
+        <u:Timeline
+            Mode="Alternate"
+            HorizontalAlignment="Left"
+            ContentMemberBinding="{ReflectionBinding Description}"
+            HeaderMemberBinding="{ReflectionBinding Header}"
+            ItemsSource="{Binding Items}"
+            TimeMemberBinding="{ReflectionBinding Time}" >
+        </u:Timeline>
+    </StackPanel>
+</UserControl>

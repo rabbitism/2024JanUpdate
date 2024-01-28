@@ -17,8 +17,8 @@
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.7"/>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-        <PackageReference Include="Irihi.Ursa" Version="0.2.0-beta20240128" />
-        <PackageReference Include="Irihi.Ursa.Themes.Semi" Version="0.2.0-beta20240128" />
+        <PackageReference Include="Irihi.Ursa" Version="0.2.0-beta20240129" />
+        <PackageReference Include="Irihi.Ursa.Themes.Semi" Version="0.2.0-beta20240129" />
         <PackageReference Include="Semi.Avalonia" Version="11.0.7" />
     </ItemGroup>
 </Project>
