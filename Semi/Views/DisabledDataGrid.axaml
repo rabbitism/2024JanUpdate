@@ -1,0 +1,59 @@
+<UserControl
+    x:Class="Semi.Views.DisabledDataGrid"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:Semi.ViewModels"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    x:CompileBindings="True"
+    x:DataType="vm:DisabledDataGridViewModel"
+    mc:Ignorable="d">
+    <Grid RowDefinitions="Auto, *">
+        <ToggleSwitch
+            Name="DisableToggle"
+            Grid.Row="0"
+            Content="Disable" />
+        <DataGrid
+            Grid.Row="1"
+            Margin="8"
+            CanUserReorderColumns="True"
+            CanUserResizeColumns="True"
+            CanUserSortColumns="True"
+            HeadersVisibility="All"
+            IsEnabled="{Binding #DisableToggle.IsChecked}"
+            IsReadOnly="True"
+            ItemsSource="{Binding GridData1}">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="6*"
+                    x:DataType="vm:Song"
+                    Binding="{Binding Title}"
+                    Header="Title" />
+                <DataGridTextColumn
+                    Width="6*"
+                    x:DataType="vm:Song"
+                    Binding="{Binding Artist}"
+                    Header="Artist" />
+                <DataGridTextColumn
+                    Width="6*"
+                    x:DataType="vm:Song"
+                    Binding="{Binding Album}"
+                    Header="Album" />
+                <DataGridTemplateColumn Header="Duration" SortMemberPath="Duration">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock
+                                Margin="8,0,0,0"
+                                VerticalAlignment="Center"
+                                Text="{Binding Duration}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+    </Grid>
+</UserControl>

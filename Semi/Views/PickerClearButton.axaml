@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800"
+             d:DesignHeight="450"
+             Padding="20"
+             x:Class="Semi.Views.PickerClearButton">
+    <StackPanel Spacing="30">
+        <DatePicker></DatePicker>
+        <TimePicker></TimePicker>
+        <ComboBox>
+            <ComboBoxItem>Ding</ComboBoxItem>
+            <ComboBoxItem>Otter</ComboBoxItem>
+            <ComboBoxItem>Husky</ComboBoxItem>
+            <ComboBoxItem>Mr. 17</ComboBoxItem>
+            <ComboBoxItem>Cass</ComboBoxItem>
+        </ComboBox>
+    </StackPanel>
+</UserControl>

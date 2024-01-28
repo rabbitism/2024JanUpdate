@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semi", "Semi\Semi.csproj", "{DB09DAF8-1867-4D5E-8FCC-322A8EE4A2D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemiUpdate", "SemiUpdate\SemiUpdate.csproj", "{3D933725-B8E1-4607-8463-B03DBAF556E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa", "Ursa\Ursa.csproj", "{0E543799-F46B-4DE0-87FB-6E8490AE7651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrsaDialog", "UrsaDialog\UrsaDialog.csproj", "{72975144-E8A2-4B54-9670-DEE83D803AFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB09DAF8-1867-4D5E-8FCC-322A8EE4A2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB09DAF8-1867-4D5E-8FCC-322A8EE4A2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB09DAF8-1867-4D5E-8FCC-322A8EE4A2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB09DAF8-1867-4D5E-8FCC-322A8EE4A2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D933725-B8E1-4607-8463-B03DBAF556E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D933725-B8E1-4607-8463-B03DBAF556E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D933725-B8E1-4607-8463-B03DBAF556E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D933725-B8E1-4607-8463-B03DBAF556E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E543799-F46B-4DE0-87FB-6E8490AE7651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E543799-F46B-4DE0-87FB-6E8490AE7651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E543799-F46B-4DE0-87FB-6E8490AE7651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E543799-F46B-4DE0-87FB-6E8490AE7651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72975144-E8A2-4B54-9670-DEE83D803AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72975144-E8A2-4B54-9670-DEE83D803AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72975144-E8A2-4B54-9670-DEE83D803AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72975144-E8A2-4B54-9670-DEE83D803AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

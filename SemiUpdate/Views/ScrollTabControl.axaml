@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:SemiUpdate.ViewModels"
+             x:DataType="vm:TabControlViewModel"
+             x:CompileBindings="True"
+             mc:Ignorable="d" d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="SemiUpdate.Views.ScrollTabControl">
+    <UserControl.Styles>
+        <Style Selector="TabControl">
+            <Setter Property="ItemTemplate">
+                <DataTemplate x:DataType="vm:TabItemViewMode">
+                    <TextBlock Text="{Binding Header}" />
+                </DataTemplate>
+            </Setter>
+            <Setter Property="ContentTemplate">
+                <DataTemplate x:DataType="vm:TabItemViewMode">
+                    <TextBlock Text="{Binding Content}" />
+                </DataTemplate>
+            </Setter>
+        </Style>
+    </UserControl.Styles>
+    <StackPanel Spacing="30">
+        <TabControl ItemsSource="{Binding Items}"/>
+        <TabControl Theme="{DynamicResource ScrollTabControl}" ItemsSource="{Binding Items}"/>
+    </StackPanel>
+</UserControl>
