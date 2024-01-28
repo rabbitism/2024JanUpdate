@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace Ursa;
+namespace UrsaDemo;
 
 class Program
 {

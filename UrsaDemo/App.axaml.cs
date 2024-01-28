@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace Ursa;
+namespace UrsaDemo;
 
 public partial class App : Application
 {

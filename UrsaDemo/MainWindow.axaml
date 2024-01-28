@@ -1,0 +1,27 @@
+<Window
+    x:Class="UrsaDemo.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:UrsaDemo.Views"
+    Title="UrsaDemo"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid RowDefinitions="Auto, Auto, *" >
+        <ToggleButton Content="Toggle Theme" IsCheckedChanged="ToggleButton_OnIsCheckedChanged" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="1" Text="Ursa Update" FontSize="40" FontWeight="Bold"></TextBlock>
+        <TabControl Grid.Row="2" TabStripPlacement="Left" Margin="20">
+            <TabItem Header="Button Group">
+                <views:ButtonGroupDemo/>
+            </TabItem>
+            <TabItem Header="Dual Badge">
+                <views:DualBadgeDemo />
+            </TabItem>
+            <TabItem Header="Enum Selector">
+                <views:EnumSelectorDemo/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
